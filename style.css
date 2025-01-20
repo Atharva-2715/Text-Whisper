@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: "Roboto Mono", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;    
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background: url('bg.jpg') no-repeat center center fixed; 
+    background-size: cover;
+    overflow-y: auto; 
+    object-fit: cover;
+    z-index: -1;
+}
+
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    gap: 10px;
+}
+
+.t1{
+    color:aliceblue;
+}
+
+.t2{
+    color: #5901ab;
+}
+
+.description{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.description p{
+    font-size: 20px;
+    color: rgb(196, 199, 202);
+}
+
+.text{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+textarea{
+    margin-top: 40px;
+    margin-bottom: 20px;
+    padding: 20px;
+    width:600px;
+    height: 250px;
+    font-size: 17px;
+    resize: none;
+    background-color:transparent;
+    backdrop-filter: blur(10px);
+    color:aliceblue;
+    border-radius: 1.2rem;
+    outline: none;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    gap:40px;
+    width: 640px;
+}
+
+.row button{
+    width: 90px;
+    height: 40px;
+    border-radius: 1.2rem;
+    outline: none;
+    border: none;
+    background-color: #5901ab;
+    color: aliceblue;
+    cursor: pointer;
+    transform: scale(0.89);
+    transition: all 0.5s ease;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.row button img{
+    width: 16px;
+    padding-left: 12px;
+}
+
+.row button:hover{
+    transform: scale(1.02);
+}
+
+select{
+    padding-left: 10px;
+    color: aliceblue;
+    flex: 1;
+    border-radius:1.2rem;
+    outline: none;
+    height: 40px;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    appearance: none;
+    background-image: url("dropdown.png");
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position-x: calc(100% - 10px);
+    background-position-y: 5px ;
+}
